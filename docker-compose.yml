@@ -16,7 +16,7 @@ services:
       - ./.docker/storage/app/www/images:/usr/share/nginx/html/www/images
 
     ports:
-      - "8080:80"
+      - "8086:80"
     links:
       - mysql
       - mailpit
@@ -37,5 +37,5 @@ services:
     image: axllent/mailpit:latest
     restart: always
     ports:
-      - '1025:1025'
-      - '8025:8025'
+      - '1026:1025'
+      - '8026:8025'
